@@ -9,5 +9,7 @@ public class Application {
         List<Integer> winningNumbers = InputView.getWinningNumbers();
         int bonusNumber = InputView.getBonusNumber(winningNumbers);
 
+        LottoResult result = new LottoResult(purchasedLottos, winningNumbers, bonusNumber, purchaseAmount);
+        OutputView.printResult(result);
     }
 }
